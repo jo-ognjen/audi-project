@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/Logo/Audi-Logo_2016.svg" alt="Audi Logo">
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <a href="#" id="home" class="active">Homepage</a>
+            <div class="dropdown-trigger" onclick="toggleDropdown()">
+                <a id="about" href="#">About Us</a>
+                <div class="dropdown" id="dropdownMenu">
+                    <a href="#">Our Team</a>
+                    <a href="#">Leadership</a>
+                    <a href="#">Partners</a>
+                </div>
+            </div>
+            <a href="#">Products</a>
+            <a href="#" class="contact-us">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="carousel" id="carousel">
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <div class="highlight">New Arrival</div>
+                    <h1>Expectations put limitations on possibilities.</h1>
+                    <p>The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV
+                        design.</p>
+                </div>
+                <img src="assets/Images/header-img-1440.jpg" alt="Audi Q8">
+            </div>
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <div class="highlight">New Arrival</div>
+                    <h1>Expectations put limitations on possibilities.</h1>
+                    <p>The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV
+                        design.</p>
+                </div>
+                <img src="assets/Images/header-img-1440.jpg" alt="Audi Q8">
+            </div>
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <div class="highlight">New Arrival</div>
+                    <h1>Expectations put limitations on possibilities.</h1>
+                    <p>The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV
+                        design.</p>
+                </div>
+                <img src="assets/Images/header-img-1440.jpg" alt="Audi Q8">
+            </div>
+        </div>
+        <div class="hero-buttons">
+            <button onclick="prevSlide()">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.433298 6.55834C0.316256 6.67553 0.250515 6.83438 0.250515 7C0.250515 7.16563 0.316256 7.32448 0.433298 7.44167L6.6833 13.6917C6.80178 13.8021 6.95848 13.8622 7.1204 13.8593C7.28232 13.8565 7.43681 13.7909 7.55132 13.6764C7.66583 13.5618 7.73142 13.4074 7.73428 13.2454C7.73713 13.0835 7.67703 12.9268 7.56663 12.8083L1.7583 7L7.56663 1.19167C7.67703 1.07319 7.73713 0.916486 7.73428 0.754569C7.73142 0.592651 7.66583 0.438164 7.55132 0.323653C7.43681 0.209142 7.28232 0.143549 7.1204 0.140692C6.95848 0.137835 6.80178 0.197938 6.6833 0.308338L0.433298 6.55834Z"
+                        fill="#9CA3B5" />
+                </svg>
+            </button>
+            <button onclick="nextSlide()">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.5667 6.55834C7.68374 6.67553 7.74949 6.83438 7.74949 7C7.74949 7.16563 7.68374 7.32448 7.5667 7.44167L1.3167 13.6917C1.19822 13.8021 1.04152 13.8622 0.8796 13.8593C0.717682 13.8565 0.563194 13.7909 0.448683 13.6764C0.334172 13.5618 0.268579 13.4074 0.265722 13.2454C0.262866 13.0835 0.322968 12.9268 0.433368 12.8083L6.2417 7L0.433368 1.19167C0.322968 1.07319 0.262866 0.916486 0.265722 0.754569C0.268579 0.592651 0.334172 0.438164 0.448683 0.323653C0.563194 0.209142 0.717682 0.143549 0.8796 0.140692C1.04152 0.137835 1.19822 0.197938 1.3167 0.308338L7.5667 6.55834Z"
+                        fill="#9CA3B5" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <section class="intro-section">
+        <div class="container">
+            <div class="img-container">
+                <div class="grey">
+                </div>
+                <img src="assets/Images/about-us-section.png" alt="audi q8">
+            </div>
+            <div class="text">
+                <p class="sub-header">About q8</p>
+                <h2>Welcome to the 8th dimension. The new Audi Q8.</h2>
+                <p>With its imposing single-frame design, the Audi Q8 introduces the next level of automotive elegance.
+                    A perfect combination of luxury and performance.</p>
+                <p class="note">The radiator grille combines with the forward-mounted spoiler and the strongly contoured
+                    air inlets to underline its confident look.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured section">
+        <div class="description">
+            <h2>Brand New: The Audi RS Q8</h2>
+            <p>The RS Q8 gives you the choice: depending on the selected equipment, its looks are even bolder and
+                sportier to suit your personal ambitions.</p>
+            <div class="performances">
+                <div class="performance">
+                    <p>Power output</p>
+                    <p>441 kw</p>
+                    <p>(600 hp)</p>
+                </div>
+                <div class="performance">
+                    <p>Acceleration</p>
+                    <p>3.8</p>
+                    <p>seconds</p>
+                </div>
+                <div class="performance">
+                    <p>Torque</p>
+                    <p>800</p>
+                    <p>Nm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cars section">
+        <h2>You might take a look...</h2>
+        <div class="category">
+            <p class="active">All</p>
+            <p>Hatchback</p>
+            <p>Sportback</p>
+            <p>Limousine</p>
+            <p>SUV</p>
+            <p>Cabrio</p>
+        </div>
+        <div class="car-list">
+
+            <div class="car" onclick="openModal('Audi Q3 2020', 29999, 'assets/Images/product-card-audi-q3.png')">
+                <img src="assets/Images/product-card-audi-q3.png" alt="Audi Q3">
+                <p>5 Seats, 4 Doors</p>
+                <h3>Audi Q3 2020</h3>
+                <p class="configurator">Configurator</p>
+                <ul>
+                    <li>Includes 300 free km</li>
+                    <li>Theft Protection</li>
+                    <li>Non Refundable</li>
+                </ul>
+                <div class="buy">
+                    <div>
+                        <span>Starting from</span>
+                        <span class="starting-price">29,999€</span>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="car" onclick="openModal('Audi A4 2020', 24999, 'assets/Images/product-card-audi-a4.png')">
+                <img src="assets/Images/product-card-audi-a4.png" alt="Audi A4">
+                <p>5 Seats, 4 Doors</p>
+                <h3>Audi A4 2020</h3>
+                <p class="configurator">Configurator</p>
+                <ul>
+                    <li>Includes 300 free km</li>
+                    <li>Theft Protection</li>
+                    <li>Non Refundable</li>
+                </ul>
+                <div class="buy">
+                    <div>
+                        <span>Starting from</span>
+                        <span class="starting-price">24,999€</span>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="car" onclick="openModal('Audi A3 2020', 19999, 'assets/Images/product-card-audi-a3.png')">
+                <img src="assets/Images/product-card-audi-a3.png" alt="Audi A3">
+                <p>5 Seats, 4 Doors</p>
+                <h3>Audi A3 2020</h3>
+                <p class="configurator">Configurator</p>
+                <ul>
+                    <li>Includes 300 free km</li>
+                    <li>Theft Protection</li>
+                    <li>Non Refundable</li>
+                </ul>
+                <div class="buy">
+                    <div>
+                        <span>Starting from</span>
+                        <span class="starting-price">19,999€</span>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="car" onclick="openModal('Audi Q7 2020', 39999, 'assets/Images/product-card-audi-q7.png')">
+                <img src="assets/Images/product-card-audi-q7.png" alt="Audi Q7">
+                <p>5 Seats, 4 Doors</p>
+                <h3>Audi Q7 2020</h3>
+                <p class="configurator">Configurator</p>
+                <ul>
+                    <li>Includes 300 free km</li>
+                    <li>Theft Protection</li>
+                    <li>Non Refundable</li>
+                </ul>
+                <div class="buy">
+                    <div>
+                        <span>Starting from</span>
+                        <span class="starting-price">39,999€</span>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact-overlay-text">
+            <h3>Contact Us</h3>
+            <h2>If you have any questions, don’t hesitate to contact us.</h2>
+        </div>
+        <div class="contact-image"></div>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="ENTER YOUR NAME *" required>
+                <input type="email" placeholder="ENTER YOUR EMAIL *" required>
+                <textarea placeholder="YOUR MESSAGE *" rows="5" required></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2020 ewasoft. All rights reserved</p>
+        <div>
+            <a href="#">TERMS OF AGREEMENT</a>
+            <a href="#">PRIVACY POLICY</a>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-left">
+                <div class="badge">NEW</div>
+                <img id="car-img" src="assets/Images/product-card-audi-q7.png" alt="Audi Q7">
+                <p class="spec">5 Seats, 4 Doors</p>
+                <h3 id="car-title"></h3>
+                <div class="price-box">
+                    <div class="price">
+                        <span>Starting from</span>
+                        <p id="base-price">39,999€</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-right">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h3>Audi Configurator</h3>
+                <p>Create your own Audi</p>
+                <ul class="options">
+                    <li>
+                        <input type="checkbox" value="0" onclick="updatePrice()" checked>
+                        <div class="specification">
+                            <span>48-V electrical system</span>
+                            <span>0,- EUR</span>
+                        </div>
+                    </li>
+                    <li><input type="checkbox" value="278.60" onclick="updatePrice()">
+                        <div class="specification">
+                            <span>Adaptive air suspension - sport</span>
+                            <span>278,60 EUR</span>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="558.78" onclick="updatePrice()">
+                        <div class="specification">
+                            <span>Acoustic side windows - optional</span>
+                            <span>558,78 EUR</span>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="357.29" onclick="updatePrice()">
+                        <div class="specification">
+                            <span>Acoustic and heat-insulating</span>
+                            <span>357,29 EUR</span>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="637.48" onclick="updatePrice()">
+                        <div class="specification">
+                            <span>Ambiental LED</span>
+                            <span>637,48 EUR</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
